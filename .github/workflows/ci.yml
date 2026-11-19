@@ -11,17 +11,25 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [14, 16, 18] # Node.js versions to test on
+
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Specify the Node.js version
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
 
       - name: Run tests
         run: npm test

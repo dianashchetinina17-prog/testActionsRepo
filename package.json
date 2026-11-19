@@ -4,7 +4,8 @@
   "description": "Lab 2 - GitHub Actions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/dianashchetinina17-prog/testActionsRepo#readme",
   "devDependencies": {
+    "eslint": "^8.57.1",
     "jest": "^30.5.2"
   }
 }
