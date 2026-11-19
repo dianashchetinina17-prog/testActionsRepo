@@ -21,6 +21,6 @@
   "homepage": "https://github.com/dianashchetinina17-prog/testActionsRepo#readme",
   "devDependencies": {
     "eslint": "^8.57.1",
-    "jest": "^30.5.2"
+    "jest": "^29.7.0"
   }
 }
