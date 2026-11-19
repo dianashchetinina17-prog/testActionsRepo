@@ -1,0 +1,24 @@
+{
+  "name": "testactionsrepo",
+  "version": "1.0.0",
+  "description": "Lab 2 - GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianashchetinina17-prog/testActionsRepo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dianashchetinina17-prog/testActionsRepo/issues"
+  },
+  "homepage": "https://github.com/dianashchetinina17-prog/testActionsRepo#readme",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
